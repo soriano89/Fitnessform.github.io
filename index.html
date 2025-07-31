@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FORM 101</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .top-section {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 50px 100px;
+    }
+
+    .picture-box img {
+      width: 250px;
+      height: 150px;
+    }
+
+    .text-block {
+      margin-left: 30px;
+      width: 500px;
+    }
+
+    .form-left {
+      position: absolute;
+      top: 250px;
+      left: 300px;
+    }
+
+    .form-left label {
+      display: inline-block;
+      width: 100px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .form-left input[type="text"] {
+      width: 300px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 2px solid black;
+    }
+
+    .contact-container {
+      position: absolute;
+      top: 420px;
+      left: 300px;
+    }
+
+    .contact-container label {
+      display: inline-block;
+      width: 140px;
+      font-weight: bold;
+    }
+
+    .short-input {
+      width: 260px;
+      padding: 5px;
+      border: 2px solid black;
+    }
+
+    .form-right {
+      position: absolute;
+      top: 250px;
+      left: 800px;
+    }
+
+    .form-right label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .form-right input[type="radio"],
+    .form-right input[type="checkbox"] {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Section with Image and Description Side-by-Side -->
+    <div class="top-section">
+      <div class="picture-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj_MbCFOr9gPbcRhZz9zBklypy65XGTuKZ4KWqFEqqXA3fgCei7HRjmAo&s=10" alt="Exercise Image">
+      </div>
+      <div class="text-block">
+        <h2>
+          Ready to embark on your fitness journey?<br>
+          This form is your first step towards a healthier,<br>
+          stronger, and more confident you!<br>
+          Let's work together to achieve your goals.<br>
+          Fill out the information below, and let's get started!
+        </h2>
+      </div>
+    </div>
+
+    <!-- Form Inputs -->
+    <div class="form-left">
+      <label>Name:</label>
+      <input type="text"><br>
+      <label>Address:</label>
+      <input type="text"><br>
+      <label>Email-Ad:</label>
+      <input type="text"><br>
+    </div>
+
+    <div class="contact-container">
+      <label>Contact Number:</label>
+      <input type="text" class="short-input">
+    </div>
+
+    <div class="form-right">
+      <label>Gender:</label>
+      <input type="radio" name="gender"> Male<br>
+      <input type="radio" name="gender"> Female
+
+      <label>Hobbies:</label>
+      <input type="checkbox"> Swimming<br>
+      <input type="checkbox"> Biking<br>
+      <input type="checkbox"> Reading<br>
+      <input type="checkbox"> Watching TV<br>
+      <input type="checkbox"> Playing
+    </div>
+  </div>
+</body>
+</html>
